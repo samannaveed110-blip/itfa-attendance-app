@@ -280,7 +280,7 @@ def new_qr():
             "INSERT INTO qr_tokens (token, class_type, expires_at) VALUES (?, ?, ?)",
             (token, class_type, expires.isoformat())
         )
-    link = "https://magma-prolonged-plasma.ngrok-free.dev" + url_for("qr_checkin", token=token) 
+    link = request.url_root.rstrip("/") + url_for("qr_checkin", token=token)
     try:
         import qrcode
         import io
