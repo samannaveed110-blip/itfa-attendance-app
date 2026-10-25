@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 Flask
 qrcode[pil]
+=======
+Flask
+qrcode[pil]
+>>>>>>> 6cc4f5744b6cd9bd157beaf057691f0e5d6a8f3d
 gunicorn
